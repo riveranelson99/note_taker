@@ -7,8 +7,8 @@ const notes = require('./db/db.json')
 // Bring in a uuid randomizer that was utilized in previous activities
 const uuid = require('./public/assets/helpers/uuid')
 
-// Use port method required by heroku
-const PORT = process.env.PORT || 3000;
+// Use port method required by heroku and default to 3001 otherwise
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 // Basic middleware required
