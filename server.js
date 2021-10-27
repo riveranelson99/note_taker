@@ -37,7 +37,10 @@ app.post('/api/notes', (req, res) => {
 });
 
 app.delete('/api/notes/:id', (req, res) => {
-    notes = notes.filter(note => note.id !== req.params.id);
+    for (i = 0; i <notes.length; i++) {
+        if (notes[i].id === req.params.id)
+        notes.splice(i, 1);
+    }
 
     fs.writeFileSync('./db/db.json', JSON.stringify(notes, null, 2));
     res.json(notes);
