@@ -14,4 +14,8 @@ Modifying established code in order to build a functioning note taker app.
 
 # Screenshot
 
+![Screenshot](./assets/port-11-screenshot.png)
+
 # Heroku Deployed Link
+
+[Deployed Heroku page](https://limitless-river-03873.herokuapp.com/)
